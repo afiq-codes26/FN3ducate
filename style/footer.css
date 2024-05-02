@@ -1,0 +1,21 @@
+.logo-footer img{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    max-width: 100%;
+    width: 166px;
+    height: auto;
+    background-color: transparent;
+  }
+
+  footer{
+    display: flex;
+    background-color: #2D32AA61;
+    color: #2D3D65;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 0px;
+    font-size: 12px;
+  }

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap');
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    height: 100%;
+    vertical-align: middle;
+    font-family: "Lato", sans-serif;
+}
+
+.simple {
+    font-family: "Lato", sans-serif;
+    padding: 40px 20px;
+    border-radius: 20px;
+    background-color: #bec7de;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    width: 70%;
+}
+
+.simple h1 {
+    align-self: center;
+    color: white;
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.simple table {
+    background-color: #bec7de;
+}
+
+.simple table td {
+    margin-bottom: 10px;    
+}
+
+.simple table tr{
+    padding-bottom: 10px;
+}
+
+.simple table tr, .simple table td , .simple table, .simple h1{
+    background-color: #bec7de;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.simple button:not(.bttn-rgstr, .forgot) {
+    display: flex;
+    align-self: center;
+    margin-top: 15px;
+    padding: 5px 20px;
+    font-style: italic;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    letter-spacing: 1;
+    justify-self: center;
+    border-radius: 15px;
+    border: none;
+    background-color: #354AB6;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.simple .bttn-rgstr {
+    align-self: left;
+    text-align: left;
+    color: white;
+    width: 30vh;
+    background-color: transparent;
+}
+
+.simple .forgot {
+    align-self: flex-end;
+    justify-self: flex-end;
+    translate: 0px -20px;    
+    color: white;
+}
+
+.simple .text {
+    background-color: #bec7de;
+    color: rgb(96, 90, 90);
+}
+
+.simple button:not(.bttn-rgstr, .forgot):hover{
+    margin-top: 15px;
+    padding: 5.5px 20.5px;
+    font-size: 16px;
+}
+
+input[type=text], select, input[type=password]{
+    width: auto;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    background-color: white;
+    padding: 15px 15px;
+}
