@@ -424,7 +424,7 @@ section.tutor {
 .hi2{
     position: absolute;
     width:12%;
-    left:88%;
+    translate: 185vh;
     top:2100px;
     z-index:1;
     filter:drop-shadow(0px 3px 4px rgba(0, 0, 0, 0.5));
