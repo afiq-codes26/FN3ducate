@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap');
+
+section.schedule {  
+    padding-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    gap: 20px;
+}
+
+section.schedule h1 {
+    font-family: "Lato", sans-serif;
+    display: flex;
+    align-self: left;
+    font-size: 6vh;
+}
+
+section.schedule .table tbody {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+section.schedule .table tr {
+    background-color: white;
+    border: 1px solid black;
+    width: 100%;
+    align-self: center;
+    padding: 20px;
+    border-radius: 0px 20px 20px 20px;
+    box-shadow: -8px -6px 0px 0px rgb(0, 45, 246);
+    font-family: "Outfit", sans-serif;
+}
+
+.placeholder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: center;
+    font-family: "Outfit", sans-serif;
+    gap: 170px;
+    font-size: 20px;
+}
+
+section.schedule .table table{
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+section.schedule .table tbody {
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.schedule .table tbody tr {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}

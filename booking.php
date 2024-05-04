@@ -1,6 +1,6 @@
 <?php
     include("connection.php");
-    include("top_page.php");
+    include("sidebar_student.php");
     session_start();
     if(isset($_POST["submit"])){
         $student_id = mysqli_real_escape_string($connection, $_POST["Student_ID"]);
@@ -39,119 +39,97 @@
 ?>
 <head>
 <title> FN3Ducate: Student Booking </title>
-<style>
-	.dropdown-button {
-		appearance: none;
-		-webkit-appearance: none;
-		-moz-appearance: none;
-		background-color: #fff;
-		border: 1px solid #ccc;
-		border-radius: 5px;
-		padding: 8px 16px;
-		font-size: 14px;
-		cursor: pointer;
-	}
-
-	.dropdown-button:hover {
-		background-color: #f0f0f0;
-	}
-
-	.dropdown-button:focus {
-		outline: none;
-		border-color: #999;
-	}
-
-	.dropdown-button option {
-		padding: 8px 16px;
-		font-size: 14px;
-	}  
-</style>
 </head>
-<link rel = "stylesheet" href = "forms.css">
-<link rel = "stylesheet" href = "button.css">
-<link rel = "stylesheet" href = "main.css">
-<div class = "booking">
-
-
+<link rel = "stylesheet" href = "style/booking.css">
 <center>
-<section class = "form">
+<section class="booking">
 <form class = "simple" action = "booking.php" method = "post">
-	<h1> Class Booking </h1>
-	<table>
-		<tr>
-			<td> Student ID: </td>
-			<td> <input required type = "text" name = "Student_ID"> </td>
-		</td>
-		</tr>
-		
-		<tr>
-			<td> Subject: </td>
-			<td>
-			<select name="Subject_ID" id="subject_select" class="dropdown-button" onchange="updateTutorsAndAllocations()">
-				<option value="">Select Subject</option>
-				<?php
-					$sql = "SELECT * FROM subject_db";
-					$data = mysqli_query($connection, $sql);
-					while ($code = mysqli_fetch_array($data)){
-						echo "<option value='$code[Subject_ID]'>$code[Subject_Name]</option>";
-					}
-				?>
-			</select>
-			</td>
-		</tr>
-
-		<tr>
-			<td> Tutor: </td>
-			<td>
-				<select name="Tutor_ID" id="tutor_select" class="dropdown-button" onchange="fetchAllocations(this.value)">
-				<option value="">Select Tutor</option>
-				</select>
-			</td>
-		</tr>
-
-		<tr>
-			<td> Timeslot Allocation: </td>
-			<td>
-				<select name="Allocation_ID" class="dropdown-button">
-				<option value="">Select Timeslot</option>
-				<?php
-					$sql = "SELECT * FROM allocation_db
-							join timeslot_db on allocation_db.Timeslot_Code = timeslot_db.Timeslot_Code";
-					$data = mysqli_query($connection, $sql);
-					while ($code = mysqli_fetch_array($data)){
-						echo "<option value='$code[Allocation_ID]'>$code[Timeslot]</option>";
-					}
-				?>
-				
-				</select>
-			</td>
-		</tr>
-		
-		<tr>
-				<td> Level: </td>
-				<td> 
-					<select name="Level_Code">
+	<h1> Meets your Tutors Through Subjects </h1>
+	<div class="top">
+		<div class="placeholder">
+			<span> Student ID : </span>
+			<span> Subject: </span>
+			<span> Tutor: </span>
+		</div>
+		<div class="input">
+			<table>
+				<tr>
+				<td> <input required type = "text" name = "Student_ID"> </td>
+				</tr>
+				<tr>
+				<td>
+					<select name="Subject_ID" id="subject_select" class="dropdown-button" onchange="updateTutorsAndAllocations()">
+						<option value="">Select Subject</option>
 						<?php
-							$sql = "SELECT * FROM level_db";
+							$sql = "SELECT * FROM subject_db";
 							$data = mysqli_query($connection, $sql);
 							while ($code = mysqli_fetch_array($data)){
-								echo "<option value='$code[Level_Code]'>$code[Student_Level]</option>";
+								echo "<option value='$code[Subject_ID]'>$code[Subject_Name]</option>";
 							}
 						?>
 					</select>
+					</td>
+						</tr><tr>
+					<td>
+						<select name="Tutor_ID" id="tutor_select" class="dropdown-button" onchange="fetchAllocations(this.value)">
+						<option value="">Select Tutor</option>
+						</select>
+					</td>
+						</tr>
+			</table>
+		</div>
+	</div>
+	<span class="alloc">Please allocate and confirm date and time.</span>
+	<div class="time">
+		<table>	
+			<tbody class="date">
+				<tr>
+					<td> Date Selection: </td>
+				</tr>
+				<td>
+				<input type="date" name="Booking_Date" placeholder = "Date of Class" min="2023-01-01" max="2025-12-31">
 				</td>
-		</tr>
-		
-		<tr>
-			<td> Date Selection: </td>
-			<td>
-			<input type="date" name="Booking_Date" placeholder = "Date of Class" min="2023-01-01" max="2025-12-31">
-			</td>
-		</tr>
-	</table>
-	<button class="Add" type="submit" name="submit"> Submit! </button>
+			</tbody>
+			<tbody class="allocation">
+
+				<tr>
+					<td> Timeslot Allocation: </td>
+					<td>
+						<select name="Allocation_ID" class="dropdown-button">
+						<option value="">Select Timeslot</option>
+						<?php
+							$sql = "SELECT * FROM allocation_db
+									join timeslot_db on allocation_db.Timeslot_Code = timeslot_db.Timeslot_Code";
+							$data = mysqli_query($connection, $sql);
+							while ($code = mysqli_fetch_array($data)){
+								echo "<option value='$code[Allocation_ID]'>$code[Timeslot]</option>";
+							}
+						?>
+						
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td> Level: </td>
+					<td> 
+						<select name="Level_Code">
+							<?php
+								$sql = "SELECT * FROM level_db";
+								$data = mysqli_query($connection, $sql);
+								while ($code = mysqli_fetch_array($data)){
+									echo "<option value='$code[Level_Code]'>$code[Student_Level]</option>";
+								}
+							?>
+						</select><br>
+					</td>
+				</tr>
+			</tbody>					
+		</table>
+	</div>
+	<div class="submit">
+	<button class="Add" type="submit" name="submit"> Confirm! </button>
+	<div>
 	</form> 
-</section>
 </section>
 <br>
 </center>

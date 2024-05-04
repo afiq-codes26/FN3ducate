@@ -55,6 +55,16 @@ a.active{
     color: blue;
 }
 
+a:hover {
+    color: blue;
+}
+
+nav:hover > a:not(:hover) {
+    color: black;
+}
+
+
+
 section.btn {
     display: flex;
     flex-direction: row;

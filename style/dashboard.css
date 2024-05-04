@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Jost:ital,wght@0,800;1,800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap');
+
+section.dashboard {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70%;
+    margin-bottom: 5vh;
+}
+
+section.hello {
+    font-family: "Lato", sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    gap: 35px;
+    margin-bottom: -10vh;
+}
+
+section.hello .profile {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 70%;
+    gap: 10%;
+    box-shadow: -2px 2px 2px 1px rgb(173, 172, 172);
+    font-size: 4vh;
+    border-radius: 20px;
+    padding: 30px 30px;
+    justify-self: center;
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: white;
+}
+
+section.hello .profile .words {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    align-content: center;
+}
+
+section.hello .profile .words p {
+    font-size: 20px;
+}
+
+section.hello svg {
+    width: 50vh;
+    padding: 1vh;
+}
+
+section.hello .container-top {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 15vh;
+
+}
+
+section.hello .search {
+    display: flex;
+    flex-direction: row;
+    height: 10%;    
+    margin-bottom: -11.5vh;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: -2px 2px 2px 1px rgb(173, 172, 172);
+
+}
+
+section.hello .search svg {
+    width: 10%;
+    margin-bottom: -15vh;
+    margin-top: -15vh;
+    translate: 0px -18.5vh;
+}
+
+section.hello .container-top .subjects-taken {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    gap: 50px;
+    font-size: 6.5vh;
+    font-family: 'Jost', sans-serif;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: -2px 2px 2px 1px rgb(173, 172, 172);
+}
+
+section.hello .container-top .subjects-taken h3 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 1000;
+
+}
+
+section.subjects {
+    font-family: "Lato", sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+section.subjects .menu {
+    display: flex;
+    gap: 100px;
+}   
+
+section.subjects .menu a {
+    text-decoration: none;
+    columns: black;
+}
+
+section.subjects .container1 {
+    width: 50%;
+    text-align: left;
+}
+
+section.subjects .container2{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.table div{
+    font-size: 30px;
+    border-radius: 20px;
+    padding: 10px 35px;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(252,215,134,1) 35%, rgba(247,218,155,1) 100%, rgba(0,212,255,1) 100%);
+    box-shadow: -2px 2px 2px 1px rgb(173, 172, 172);
+    font-size: 30px;
+
+}
+
+.table div span:not(.li-sub) {
+    font-size: 20px;
+}
+
+.book-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+    padding-bottom: 5%;
+    width: 93%;
+    padding-left: 35px;
+    padding-right: 35px;
+    text-align: left;
+    gap: 10px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: -2px 2px 2px 1px rgb(173, 172, 172);
+}
+
+.book p {
+    font-size: 30px;
+}
+
+.book span {
+    font-size: 20px;
+}
+
+.book a{
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+    background: linear-gradient(90deg, rgb(251, 72, 242) 0%, rgba(223,134,252,1) 35%, rgba(247,218,155,1) 100%, rgba(0,212,255,1) 100%);
+    width: 40%;
+}
+
+.assignment {
+    width: 93%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 35px;
+    padding-right: 35px;
+    text-align: left;
+    gap: 10px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: -2px 2px 2px 1px rgb(173, 172, 172);
+}

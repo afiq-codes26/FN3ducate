@@ -1,6 +1,6 @@
 <?php
 
-include 'progmega/top_page_main.php'
+include 'top_page_main.php'
 
 ?>
 
@@ -8,14 +8,14 @@ include 'progmega/top_page_main.php'
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Main page</title>
     <link rel="stylesheet" href="style/main_page.css">
 </head>
 <body>
     <div class="bg-img-c">
     <img src="resources/image13.png" class="bg-img1">
     </div>
-    <main class="main_main">
+    <main class="main_main" id="home">
         <section class="main_page">
             <div class="welcome">
                 <h1>
@@ -135,7 +135,7 @@ include 'progmega/top_page_main.php'
     </main>
     <?php
 
-    include ("progmega/footer.php")
+    include ("footer.php")
 
     ?>
 </body>

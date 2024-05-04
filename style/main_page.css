@@ -216,8 +216,7 @@ section.achivements span {
 .arrow{
     position:absolute;
     width: 20vh;
-    margin: auto;
-    translate: 0% 150%;
+    translate: 0vh 28vh;
 }
 
 .gradhijau {

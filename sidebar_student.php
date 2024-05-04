@@ -13,13 +13,13 @@
     <a href="main_page.php#home">
       <img src="resources/sidebar/home.png" alt="Home Icon"> Home page
     </a>
-    <a href="desktop_tutor.php">
-      <img src="resources/sidebar/tutor-removebg-preview.png" alt="Dashboard Icon"> Dashboard Tutor
+    <a href="dashboard.php">
+      <img src="resources/sidebar/tutor-removebg-preview.png" alt="Dashboard Icon">Dashboard
     </a>
     <a href="">
       <img src="resources/sidebar/notification-removebg-preview.png" alt="Notifications Icon"> Notifications
     </a>
-    <a href="contact.php">
+    <a href="contact_student.php">
       <img src="resources/sidebar/contact-removebg-preview.png" alt="Contact Icon"> Contact us
     </a>
     <a href="logout.php">

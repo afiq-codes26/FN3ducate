@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Jost:ital,wght@0,800;1,800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap');
+
+.class-container {
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15vh;
+    text-align: left;
+    width: 90%;
+    align-content: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.class-container h2 {
+    font-size: 5vh;
+}
+
+.class-container .class {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 80%;
+    align-self: center;
+}
+
+.class div.container {
+    font-size: 3vh;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    height: 15vh;
+    padding: 20px;
+    color: white;
+    background: linear-gradient(to right, #000046, #1cb5e0);
+    box-shadow: -13px -4px 10px 0px rgba(28,145,255,0.68);
+    border-radius: 10px;
+}
+
+.class div.container div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.class div.container button {
+    width: 15%;
+    padding: 10px 0px;
+    align-self: center;
+    border: none;
+    background-color: lightblue;
+    border-radius: 30px;
+    border: 0.5px solid black;
+}
+
+.class div.container a {
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}

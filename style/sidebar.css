@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+title {
+  display: none;
+}
+
+main {
+  border: solid;
+  gap: 5vh;
+  justify-content: flex-start;
+  height: 100vh;
+  margin: 70px 50px;
+  font-family: "Outfit", sans-serif;
+  border: solid;
+  display: flex; /* Make the main container a flex container */
+  flex-direction: column; /* Arrange elements vertically */
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: white;
+  transition: 0.5s;
+  overflow-x: hidden;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 23px;
+  color: black;
+  display: flex;
+  transition: 0.3s;
+  align-items: center;
+  margin: 12px;
+  background-color: transparent;
+}
+
+.sidenav img {
+  width: 20px; /* Adjust width as needed */
+  height: 20px; /* Adjust height as needed */
+  margin-right: 10px; /* Add space between image and text */
+  background-color: transparent;
+}
+
+.sidenav a:hover {
+  background-color: gray;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  transition: 0.3s;
+}
+
+.logo-container {
+  text-align: center;  /* Center the logo horizontally */
+  margin-bottom: 100px;  /* Add space between logo and text (adjust as needed) */
+  background-color: transparent;
+}
+
+.logo-container img {
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+}
+
+.menu-icon {
+  background-color: transparent;
+}
