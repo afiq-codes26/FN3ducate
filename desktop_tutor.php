@@ -16,7 +16,7 @@
 ?>
 
 <link rel="stylesheet" href="style/tutor_dashboard.css">
-
+<title>Tutor Dashboard</title>
 <body class="dashboard">
 	<section class="tuto-dash">
 		<section class="container">

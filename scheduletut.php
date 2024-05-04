@@ -6,6 +6,7 @@
  
 ?>
 <center>
+<title>Tutor Schedule</title>
 <section class="schedule">
   <h1> Tutor's Schedule </h1>
   <div class="placeholder">

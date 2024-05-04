@@ -5,6 +5,7 @@
  session_start();
 ?>
 <center>
+<title>Student Schedule</title>
 <section class="schedule">
   <h1> Student's Schedule </h1>
   <div class="placeholder">

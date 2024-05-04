@@ -50,9 +50,8 @@ if(isset($_POST['submit'])){
 
 
 <html>
-<link rel="stylesheet" href="button.css">
+<title>Login</title>
 <link rel="stylesheet" href="style/forms.css">
-<link rel="stylesheet" href="main.css">
 
 <body>
 <center>

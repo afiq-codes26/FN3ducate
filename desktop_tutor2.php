@@ -6,6 +6,7 @@
     $Tutor_ID = $_SESSION["Username"];
 ?>
 <link rel="stylesheet" href="style/class.css">
+<title>Tutor Classes</title>
 <center>
 <body>
 	<section class="class-container">
