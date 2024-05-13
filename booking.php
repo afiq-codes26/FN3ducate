@@ -7,7 +7,7 @@
         $tutor_id = mysqli_real_escape_string($connection, $_POST["Tutor_ID"]);
         $level_code = mysqli_real_escape_string($connection, $_POST["Level_Code"]);
         $booking_date = mysqli_real_escape_string($connection, $_POST["Booking_Date"]);
-        
+        $_SESSION["Username"] = $_POST["Student_ID"];
         // Check if Subject_ID and Allocation_ID are set
         if(isset($_POST["Subject_ID"]) && isset($_POST["Allocation_ID"])){
             $subject_id = mysqli_real_escape_string($connection, $_POST["Subject_ID"]);
@@ -31,6 +31,7 @@
         
         if ($result == TRUE){
             echo "<br><center> Booking Successful! Please recheck your schedule! </center>";
+			header("Location: post_booking.php");
         }
         else {
             echo "<br><center> Error Occurred! ".mysqli_error($connection)." </center>";

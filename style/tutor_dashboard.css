@@ -149,6 +149,7 @@ button:not(.logout) a {
 
 button.logout {
     border: none;
+    background: transparent;
     text-decoration: none;
     width: 30vh;
     align-self: flex-end;
